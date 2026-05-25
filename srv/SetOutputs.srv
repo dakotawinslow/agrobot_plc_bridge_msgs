@@ -1,0 +1,12 @@
+# One entry per output to update (1–9 entries)
+OutputState[] outputs
+---
+# Error codes
+uint8 ERROR_NONE                = 0
+uint8 ERROR_OPC_UA_UNREACHABLE  = 1
+uint8 ERROR_OPC_UA_WRITE_FAILED = 2
+
+bool          success        # True if OPC UA write succeeded
+uint8         error_code
+string        error_message  # Human-readable detail; may include forwarded OPC UA error
+OutputState[] actual_states  # Full snapshot of all 9 outputs after the write attempt

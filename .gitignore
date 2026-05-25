@@ -1,0 +1,16 @@
+# CMake build artifacts (colcon puts these outside the package, but just in case)
+build/
+install/
+log/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Generated ROS2 interface code
+rosidl_generated/
+
+# Editor
+.vscode/
+*.swp
+*~

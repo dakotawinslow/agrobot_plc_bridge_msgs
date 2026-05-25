@@ -1,0 +1,11 @@
+# (empty request)
+---
+# Error codes
+uint8 ERROR_NONE               = 0
+uint8 ERROR_OPC_UA_UNREACHABLE = 1
+
+bool          success       # False if the OPC UA read failed
+bool          opc_ua_sync   # True = OPC UA read succeeded and values are current
+uint8         error_code
+string        error_message
+OutputState[] states        # All 9 outputs; populated on success only

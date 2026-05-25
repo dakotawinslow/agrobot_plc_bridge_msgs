@@ -1,0 +1,4 @@
+bool pressed    # True = button pressed, False = button released
+---
+bool   success
+string message  # Optional human-readable status or rejection reason
